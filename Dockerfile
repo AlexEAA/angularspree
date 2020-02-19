@@ -8,7 +8,7 @@ WORKDIR $HOME
 
 ENV APP_NAME=angularspree-client
 
-# before switching to user we need to set permission properly
+# before switching to user we need to set permission 
 # copy all files, except the ignored files from
 COPY . $HOME/$APP_NAME/
 RUN chown -R app:app $HOME/*
